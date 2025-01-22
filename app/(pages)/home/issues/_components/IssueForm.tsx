@@ -1,5 +1,4 @@
 "use client";
-import { issueSchema } from "@/app/(pages)/(home)/ValidationSchema";
 import ErrorMessage from "@/app/_components/ErrorMessage";
 import Spinner from "@/app/_components/Spinner";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -12,6 +11,7 @@ import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import SimpleMDE from "react-simplemde-editor";
 import z from "zod";
+import { issueSchema } from "../ValidationSchema";
 
 type IssueFormData = z.infer<typeof issueSchema>;
 
