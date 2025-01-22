@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Roboto:wght@400&family=Special+Elite:wght@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,9 @@
 	--foreground-rgb: 39, 56, 85;
 	--background-start-rgb: 29, 40, 59;
 	--background-end-rgb: 255, 255, 255;
+	--font-specialElite: "Special Elite", sans-serif;
+	--font-anton: "Anton", sans-serif;
+	--font-roboto: "Roboto", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
