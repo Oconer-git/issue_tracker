@@ -1,5 +1,5 @@
 "use client";
-import { Skeleton } from "@/app/components";
+import { Skeleton } from "@/app/_components";
 import classnames from "classnames";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
@@ -19,7 +19,7 @@ const NavBar = () => {
 	return (
 		<nav className="border-b mb-5 py-3 px-3 bg-[#1d283b]">
 			<Container>
-				<Flex className="justify-between">
+				<Flex justify="between">
 					<Flex align={"center"} gap="3">
 						<AiFillBug className="text-red-400" />
 						<NavLinks />
@@ -35,8 +35,8 @@ const NavLinks = () => {
 	const currentPath = usePathname();
 
 	const links = [
-		{ label: "Dashboard", href: "/" },
-		{ label: "Issues", href: "/issues/list" },
+		{ label: "Dashboard", href: "/home/dashboard" },
+		{ label: "Issues", href: "/home/issues/list" },
 	];
 	return (
 		<ul className="flex space-x-6">
