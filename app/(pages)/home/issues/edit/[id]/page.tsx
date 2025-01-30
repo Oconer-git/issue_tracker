@@ -1,7 +1,7 @@
 import prisma from "@/prisma/client";
 import { cache } from "react";
 
-import { Box } from "@radix-ui/themes";
+import { Box, Heading } from "@radix-ui/themes";
 import dynamic from "next/dynamic";
 import IssueFormSkeleton from "./loading";
 
@@ -27,6 +27,9 @@ const EditIssuePage = async ({ params }: Props) => {
 
 	return (
 		<Box className="p-5">
+			<Heading size="7" my="4">
+				Edit issue
+			</Heading>
 			<IssueForm issue={issue} />
 		</Box>
 	);

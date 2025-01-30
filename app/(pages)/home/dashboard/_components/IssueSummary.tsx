@@ -26,7 +26,7 @@ const IssueSummary = ({ open, in_progress, closed }: Props) => {
 					<Flex direction={"column"} gap={"1"}>
 						<Link
 							className="test-sm font-md"
-							href={`/issues/list?status=${container.status}`}
+							href={`/home/issues/list?status=${container.status}`}
 						>
 							{container.label}
 						</Link>

@@ -1,4 +1,6 @@
+import AuthProvider from "@/app/auth/Provider";
 import "@/app/globals.css";
+import QueryClientProvider from "@/app/QueryClientProvider";
 import "@/app/theme-config.css";
 import "@radix-ui/themes/styles.css";
 
@@ -14,7 +16,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<QueryClientProvider>
+				<AuthProvider>
+					<body>{children}</body>
+				</AuthProvider>
+			</QueryClientProvider>
 		</html>
 	);
 }

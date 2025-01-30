@@ -8,7 +8,7 @@ const loading = () => {
 	return (
 		<div>
 			<IssueActions />
-			<Table.Root variant={"surface"}>
+			<Table.Root variant={"surface"} className="mt-[10px]">
 				<Table.Header>
 					<Table.Row>
 						<Table.ColumnHeaderCell>Issues</Table.ColumnHeaderCell>
