@@ -22,7 +22,10 @@ const IssueSummary = ({ open, in_progress, closed }: Props) => {
 	return (
 		<Flex gap={"3"} className="flex-grow justify-between">
 			{containers.map((container) => (
-				<Card key={container.label} className="basis-1/3">
+				<Card
+					key={container.label}
+					className="basis-1/3 h-fit pb-[10px]"
+				>
 					<Flex direction={"column"} gap={"1"}>
 						<Link
 							className="test-sm font-md"
